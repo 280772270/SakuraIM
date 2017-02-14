@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EC6A804C1E5303E7000FB081"
+               BlueprintIdentifier = "EC6A808B1E530487000FB081"
                BuildableName = "IM.app"
                BlueprintName = "IM"
                ReferencedContainer = "container:IM.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EC6A80651E5303E7000FB081"
+               BlueprintIdentifier = "EC6A80A41E530487000FB081"
                BuildableName = "IMTests.xctest"
                BlueprintName = "IMTests"
                ReferencedContainer = "container:IM.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EC6A80701E5303E7000FB081"
+               BlueprintIdentifier = "EC6A80AF1E530487000FB081"
                BuildableName = "IMUITests.xctest"
                BlueprintName = "IMUITests"
                ReferencedContainer = "container:IM.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EC6A804C1E5303E7000FB081"
+            BlueprintIdentifier = "EC6A808B1E530487000FB081"
             BuildableName = "IM.app"
             BlueprintName = "IM"
             ReferencedContainer = "container:IM.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EC6A804C1E5303E7000FB081"
+            BlueprintIdentifier = "EC6A808B1E530487000FB081"
             BuildableName = "IM.app"
             BlueprintName = "IM"
             ReferencedContainer = "container:IM.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EC6A804C1E5303E7000FB081"
+            BlueprintIdentifier = "EC6A808B1E530487000FB081"
             BuildableName = "IM.app"
             BlueprintName = "IM"
             ReferencedContainer = "container:IM.xcodeproj">
