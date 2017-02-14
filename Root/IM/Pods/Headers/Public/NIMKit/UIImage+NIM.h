@@ -1,1 +1,0 @@
-../../../../../NIMKit/NIMKit/Category/UIImage+NIM.h

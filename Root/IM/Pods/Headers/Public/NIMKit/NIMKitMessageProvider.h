@@ -1,1 +1,0 @@
-../../../../../NIMKit/NIMKit/Protocols/NIMKitMessageProvider.h

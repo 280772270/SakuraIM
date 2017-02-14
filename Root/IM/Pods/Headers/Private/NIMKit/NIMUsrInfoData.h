@@ -1,1 +1,0 @@
-../../../../../NIMKit/NIMKit/Sections/Team/Model/NIMUsrInfoData.h

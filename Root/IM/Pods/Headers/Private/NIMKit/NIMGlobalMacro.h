@@ -1,1 +1,0 @@
-../../../../../NIMKit/NIMKit/Global/NIMGlobalMacro.h

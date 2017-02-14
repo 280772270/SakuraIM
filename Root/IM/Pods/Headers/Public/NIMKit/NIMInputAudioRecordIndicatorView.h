@@ -1,1 +1,0 @@
-../../../../../NIMKit/NIMKit/Sections/Input/NIMInputAudioRecordIndicatorView.h

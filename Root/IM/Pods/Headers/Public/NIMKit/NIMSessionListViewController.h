@@ -1,1 +1,0 @@
-../../../../../NIMKit/NIMKit/Sections/SessionList/NIMSessionListViewController.h
