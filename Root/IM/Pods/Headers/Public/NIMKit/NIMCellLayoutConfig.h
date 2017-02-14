@@ -1,0 +1,1 @@
+../../../../../NIMKit/NIMKit/Sections/Session/Config/NIMCellLayoutConfig.h

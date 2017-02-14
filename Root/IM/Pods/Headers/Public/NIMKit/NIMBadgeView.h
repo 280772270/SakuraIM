@@ -1,0 +1,1 @@
+../../../../../NIMKit/NIMKit/Sections/Common/NIMBadgeView.h
