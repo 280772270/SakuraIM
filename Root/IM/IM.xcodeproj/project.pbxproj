@@ -81,6 +81,7 @@
 				EC6A80E41E53206F000FB081 /* Assets.xcassets */,
 				EC6A80E61E53206F000FB081 /* LaunchScreen.storyboard */,
 				EC6A80E91E53206F000FB081 /* Info.plist */,
+				EC6A80EF1E53283C000FB081 /* Classes */,
 				EC6A80D81E53206F000FB081 /* Supporting Files */,
 			);
 			path = IM;
@@ -92,6 +93,317 @@
 				EC6A80D91E53206F000FB081 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC6A80EF1E53283C000FB081 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A80F01E53283C000FB081 /* Category */,
+				EC6A80F11E53283C000FB081 /* Common */,
+				EC6A80F61E53283C000FB081 /* LayoutConfig */,
+				EC6A80F71E53283C000FB081 /* Sections */,
+				EC6A81141E53283C000FB081 /* Service */,
+				EC6A81151E53283C000FB081 /* Util */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EC6A80F01E53283C000FB081 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EC6A80F11E53283C000FB081 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A80F21E53283C000FB081 /* Addons */,
+				EC6A80F31E53283C000FB081 /* Controller */,
+				EC6A80F41E53283C000FB081 /* Delegate */,
+				EC6A80F51E53283C000FB081 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EC6A80F21E53283C000FB081 /* Addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Addons;
+			sourceTree = "<group>";
+		};
+		EC6A80F31E53283C000FB081 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC6A80F41E53283C000FB081 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		EC6A80F51E53283C000FB081 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC6A80F61E53283C000FB081 /* LayoutConfig */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LayoutConfig;
+			sourceTree = "<group>";
+		};
+		EC6A80F71E53283C000FB081 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A80F81E53283C000FB081 /* Card */,
+				EC6A80FB1E53283C000FB081 /* Chatroom */,
+				EC6A80FE1E53283C000FB081 /* Contact */,
+				EC6A81031E53283C000FB081 /* Login */,
+				EC6A81061E53283C000FB081 /* Session */,
+				EC6A810B1E53283C000FB081 /* SessionList */,
+				EC6A810E1E53283C000FB081 /* Setting */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		EC6A80F81E53283C000FB081 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A80F91E53283C000FB081 /* View */,
+				EC6A80FA1E53283C000FB081 /* ViewController */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		EC6A80F91E53283C000FB081 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC6A80FA1E53283C000FB081 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EC6A80FB1E53283C000FB081 /* Chatroom */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A80FC1E53283C000FB081 /* Config */,
+				EC6A80FD1E53283C000FB081 /* Manager */,
+			);
+			path = Chatroom;
+			sourceTree = "<group>";
+		};
+		EC6A80FC1E53283C000FB081 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EC6A80FD1E53283C000FB081 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EC6A80FE1E53283C000FB081 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A80FF1E53283C000FB081 /* Helper */,
+				EC6A81001E53283C000FB081 /* Model */,
+				EC6A81011E53283C000FB081 /* View */,
+				EC6A81021E53283C000FB081 /* Viewcontroller */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		EC6A80FF1E53283C000FB081 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EC6A81001E53283C000FB081 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC6A81011E53283C000FB081 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC6A81021E53283C000FB081 /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		EC6A81031E53283C000FB081 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A81041E53283C000FB081 /* Manager */,
+				EC6A81051E53283C000FB081 /* ViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EC6A81041E53283C000FB081 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EC6A81051E53283C000FB081 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EC6A81061E53283C000FB081 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A81071E53283C000FB081 /* Config */,
+				EC6A81081E53283C000FB081 /* Model */,
+				EC6A81091E53283C000FB081 /* VieController */,
+				EC6A810A1E53283C000FB081 /* View */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		EC6A81071E53283C000FB081 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EC6A81081E53283C000FB081 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC6A81091E53283C000FB081 /* VieController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VieController;
+			sourceTree = "<group>";
+		};
+		EC6A810A1E53283C000FB081 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC6A810B1E53283C000FB081 /* SessionList */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A810C1E53283C000FB081 /* View */,
+				EC6A810D1E53283C000FB081 /* ViewController */,
+			);
+			path = SessionList;
+			sourceTree = "<group>";
+		};
+		EC6A810C1E53283C000FB081 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC6A810D1E53283C000FB081 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EC6A810E1E53283C000FB081 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A810F1E53283C000FB081 /* Log */,
+				EC6A81101E53283C000FB081 /* NetDetect */,
+				EC6A81111E53283C000FB081 /* NoDisturb */,
+				EC6A81121E53283C000FB081 /* UInfo */,
+				EC6A81131E53283C000FB081 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		EC6A810F1E53283C000FB081 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		EC6A81101E53283C000FB081 /* NetDetect */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetDetect;
+			sourceTree = "<group>";
+		};
+		EC6A81111E53283C000FB081 /* NoDisturb */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NoDisturb;
+			sourceTree = "<group>";
+		};
+		EC6A81121E53283C000FB081 /* UInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UInfo;
+			sourceTree = "<group>";
+		};
+		EC6A81131E53283C000FB081 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC6A81141E53283C000FB081 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EC6A81151E53283C000FB081 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		EEFA9E6EBBADC29539D86281 /* Pods */ = {
@@ -389,6 +701,7 @@
 				EC6A80EE1E53206F000FB081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
