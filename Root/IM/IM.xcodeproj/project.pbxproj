@@ -14,26 +14,7 @@
 		EC6A809A1E530487000FB081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6A80981E530487000FB081 /* Main.storyboard */; };
 		EC6A809C1E530487000FB081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6A809B1E530487000FB081 /* Assets.xcassets */; };
 		EC6A809F1E530487000FB081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6A809D1E530487000FB081 /* LaunchScreen.storyboard */; };
-		EC6A80AA1E530487000FB081 /* IMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A80A91E530487000FB081 /* IMTests.m */; };
-		EC6A80B51E530487000FB081 /* IMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A80B41E530487000FB081 /* IMUITests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EC6A80A61E530487000FB081 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC6A80841E530487000FB081 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC6A808B1E530487000FB081;
-			remoteInfo = IM;
-		};
-		EC6A80B11E530487000FB081 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC6A80841E530487000FB081 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC6A808B1E530487000FB081;
-			remoteInfo = IM;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		072022C486AB445ADFADE679 /* libPods-IM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,12 +30,6 @@
 		EC6A809B1E530487000FB081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC6A809E1E530487000FB081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC6A80A01E530487000FB081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC6A80A51E530487000FB081 /* IMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC6A80A91E530487000FB081 /* IMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMTests.m; sourceTree = "<group>"; };
-		EC6A80AB1E530487000FB081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC6A80B01E530487000FB081 /* IMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC6A80B41E530487000FB081 /* IMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMUITests.m; sourceTree = "<group>"; };
-		EC6A80B61E530487000FB081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,20 +38,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C52446F84FAFB959D0132A09 /* libPods-IM.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC6A80A21E530487000FB081 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC6A80AD1E530487000FB081 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				EC6A808E1E530487000FB081 /* IM */,
-				EC6A80A81E530487000FB081 /* IMTests */,
-				EC6A80B31E530487000FB081 /* IMUITests */,
 				EC6A808D1E530487000FB081 /* Products */,
 				555523380E9BC2CBFFDE62BF /* Pods */,
 				4BB80F82F413DFB18C6E99B2 /* Frameworks */,
@@ -116,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				EC6A808C1E530487000FB081 /* IM.app */,
-				EC6A80A51E530487000FB081 /* IMTests.xctest */,
-				EC6A80B01E530487000FB081 /* IMUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,24 +103,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EC6A80A81E530487000FB081 /* IMTests */ = {
-			isa = PBXGroup;
-			children = (
-				EC6A80A91E530487000FB081 /* IMTests.m */,
-				EC6A80AB1E530487000FB081 /* Info.plist */,
-			);
-			path = IMTests;
-			sourceTree = "<group>";
-		};
-		EC6A80B31E530487000FB081 /* IMUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EC6A80B41E530487000FB081 /* IMUITests.m */,
-				EC6A80B61E530487000FB081 /* Info.plist */,
-			);
-			path = IMUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,42 +126,6 @@
 			productReference = EC6A808C1E530487000FB081 /* IM.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC6A80A41E530487000FB081 /* IMTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC6A80BC1E530487000FB081 /* Build configuration list for PBXNativeTarget "IMTests" */;
-			buildPhases = (
-				EC6A80A11E530487000FB081 /* Sources */,
-				EC6A80A21E530487000FB081 /* Frameworks */,
-				EC6A80A31E530487000FB081 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC6A80A71E530487000FB081 /* PBXTargetDependency */,
-			);
-			name = IMTests;
-			productName = IMTests;
-			productReference = EC6A80A51E530487000FB081 /* IMTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		EC6A80AF1E530487000FB081 /* IMUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC6A80BF1E530487000FB081 /* Build configuration list for PBXNativeTarget "IMUITests" */;
-			buildPhases = (
-				EC6A80AC1E530487000FB081 /* Sources */,
-				EC6A80AD1E530487000FB081 /* Frameworks */,
-				EC6A80AE1E530487000FB081 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC6A80B21E530487000FB081 /* PBXTargetDependency */,
-			);
-			name = IMUITests;
-			productName = IMUITests;
-			productReference = EC6A80B01E530487000FB081 /* IMUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -236,18 +139,6 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = MQ7ZB3WWNR;
 						ProvisioningStyle = Automatic;
-					};
-					EC6A80A41E530487000FB081 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = MQ7ZB3WWNR;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EC6A808B1E530487000FB081;
-					};
-					EC6A80AF1E530487000FB081 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = MQ7ZB3WWNR;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EC6A808B1E530487000FB081;
 					};
 				};
 			};
@@ -265,8 +156,6 @@
 			projectRoot = "";
 			targets = (
 				EC6A808B1E530487000FB081 /* IM */,
-				EC6A80A41E530487000FB081 /* IMTests */,
-				EC6A80AF1E530487000FB081 /* IMUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,20 +168,6 @@
 				EC6A809F1E530487000FB081 /* LaunchScreen.storyboard in Resources */,
 				EC6A809C1E530487000FB081 /* Assets.xcassets in Resources */,
 				EC6A809A1E530487000FB081 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC6A80A31E530487000FB081 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC6A80AE1E530487000FB081 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,36 +232,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC6A80A11E530487000FB081 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC6A80AA1E530487000FB081 /* IMTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC6A80AC1E530487000FB081 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC6A80B51E530487000FB081 /* IMUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EC6A80A71E530487000FB081 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC6A808B1E530487000FB081 /* IM */;
-			targetProxy = EC6A80A61E530487000FB081 /* PBXContainerItemProxy */;
-		};
-		EC6A80B21E530487000FB081 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC6A808B1E530487000FB081 /* IM */;
-			targetProxy = EC6A80B11E530487000FB081 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EC6A80981E530487000FB081 /* Main.storyboard */ = {
@@ -526,56 +372,6 @@
 			};
 			name = Release;
 		};
-		EC6A80BD1E530487000FB081 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = MQ7ZB3WWNR;
-				INFOPLIST_FILE = IMTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zhancheng.Co.Ltd.IMTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IM.app/IM";
-			};
-			name = Debug;
-		};
-		EC6A80BE1E530487000FB081 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = MQ7ZB3WWNR;
-				INFOPLIST_FILE = IMTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zhancheng.Co.Ltd.IMTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IM.app/IM";
-			};
-			name = Release;
-		};
-		EC6A80C01E530487000FB081 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = MQ7ZB3WWNR;
-				INFOPLIST_FILE = IMUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zhancheng.Co.Ltd.IMUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = IM;
-			};
-			name = Debug;
-		};
-		EC6A80C11E530487000FB081 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = MQ7ZB3WWNR;
-				INFOPLIST_FILE = IMUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zhancheng.Co.Ltd.IMUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = IM;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -595,22 +391,7 @@
 				EC6A80BB1E530487000FB081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		EC6A80BC1E530487000FB081 /* Build configuration list for PBXNativeTarget "IMTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC6A80BD1E530487000FB081 /* Debug */,
-				EC6A80BE1E530487000FB081 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		EC6A80BF1E530487000FB081 /* Build configuration list for PBXNativeTarget "IMUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC6A80C01E530487000FB081 /* Debug */,
-				EC6A80C11E530487000FB081 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
