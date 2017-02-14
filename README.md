@@ -1,4 +1,6 @@
 # 网易云信 UI 组件 	· iOS
+临摹学习云信的架构和代码规范。自用工程
+
 [![Build Status](https://img.shields.io/travis/netease-im/NIM_iOS_UIKit/master.svg?style=flat)](https://travis-ci.org/netease-im/NIM_iOS_UIKit)
 [![Pod Version](https://img.shields.io/cocoapods/v/NIMKit.svg?style=flat)](#)
 [![Pod Platform](http://img.shields.io/cocoapods/p/NIMKit.svg?style=flat)](#)
