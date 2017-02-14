@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <NIMKit.h>
 @interface AppDelegate ()
 
 @end
