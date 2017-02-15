@@ -11,6 +11,14 @@
 		EC6A80DA1E53206F000FB081 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A80D91E53206F000FB081 /* main.m */; };
 		EC6A80E51E53206F000FB081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6A80E41E53206F000FB081 /* Assets.xcassets */; };
 		EC6A811B1E53F1B6000FB081 /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A811A1E53F1B6000FB081 /* SKAppDelegate.m */; };
+		EC6A81221E542852000FB081 /* SKConfigDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A81211E542852000FB081 /* SKConfigDelegate.m */; };
+		EC6A81251E542A01000FB081 /* SKBundleSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A81241E542A01000FB081 /* SKBundleSettings.m */; };
+		EC6A81281E5431FC000FB081 /* SKConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A81271E5431FC000FB081 /* SKConfig.m */; };
+		EC6A812C1E54343B000FB081 /* SKCustomAttachmentDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A812B1E54343B000FB081 /* SKCustomAttachmentDecoder.m */; };
+		EC6A812F1E5434EE000FB081 /* SKCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A812E1E5434EE000FB081 /* SKCellLayoutConfig.m */; };
+		EC6A81321E5435D1000FB081 /* SKLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A81311E5435D1000FB081 /* SKLogManager.m */; };
+		EC6A81351E5438DD000FB081 /* SKNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A81341E5438DD000FB081 /* SKNotificationCenter.m */; };
+		EC6A81371E543E8A000FB081 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6A81361E543E8A000FB081 /* UserNotifications.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +31,22 @@
 		EC6A81191E53F1B6000FB081 /* SKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = "<group>"; };
 		EC6A811A1E53F1B6000FB081 /* SKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = "<group>"; };
 		EC6A811E1E53F39C000FB081 /* SKIM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKIM-Prefix.pch"; sourceTree = "<group>"; };
+		EC6A811F1E53FC27000FB081 /* SKGlobalMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKGlobalMarco.h; sourceTree = "<group>"; };
+		EC6A81201E542852000FB081 /* SKConfigDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKConfigDelegate.h; sourceTree = "<group>"; };
+		EC6A81211E542852000FB081 /* SKConfigDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKConfigDelegate.m; sourceTree = "<group>"; };
+		EC6A81231E542A01000FB081 /* SKBundleSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBundleSettings.h; sourceTree = "<group>"; };
+		EC6A81241E542A01000FB081 /* SKBundleSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKBundleSettings.m; sourceTree = "<group>"; };
+		EC6A81261E5431FC000FB081 /* SKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKConfig.h; sourceTree = "<group>"; };
+		EC6A81271E5431FC000FB081 /* SKConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKConfig.m; sourceTree = "<group>"; };
+		EC6A812A1E54343B000FB081 /* SKCustomAttachmentDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCustomAttachmentDecoder.h; sourceTree = "<group>"; };
+		EC6A812B1E54343B000FB081 /* SKCustomAttachmentDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCustomAttachmentDecoder.m; sourceTree = "<group>"; };
+		EC6A812D1E5434EE000FB081 /* SKCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCellLayoutConfig.h; sourceTree = "<group>"; };
+		EC6A812E1E5434EE000FB081 /* SKCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCellLayoutConfig.m; sourceTree = "<group>"; };
+		EC6A81301E5435D1000FB081 /* SKLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKLogManager.h; sourceTree = "<group>"; };
+		EC6A81311E5435D1000FB081 /* SKLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKLogManager.m; sourceTree = "<group>"; };
+		EC6A81331E5438DD000FB081 /* SKNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKNotificationCenter.h; sourceTree = "<group>"; };
+		EC6A81341E5438DD000FB081 /* SKNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKNotificationCenter.m; sourceTree = "<group>"; };
+		EC6A81361E543E8A000FB081 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		FAE6F2770F15F72DD003C7BC /* Pods-IM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IM/Pods-IM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -31,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6A81371E543E8A000FB081 /* UserNotifications.framework in Frameworks */,
 				539831F98F98B9CC0DE06BC3 /* libPods-IM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +66,7 @@
 		AF75A90C662EBC00DD5AA0F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC6A81361E543E8A000FB081 /* UserNotifications.framework */,
 				180477EEF5743F7E2FCB1513 /* libPods-IM.a */,
 			);
 			name = Frameworks;
@@ -70,6 +96,7 @@
 				EC6A81191E53F1B6000FB081 /* SKAppDelegate.h */,
 				EC6A811A1E53F1B6000FB081 /* SKAppDelegate.m */,
 				EC6A811E1E53F39C000FB081 /* SKIM-Prefix.pch */,
+				EC6A811F1E53FC27000FB081 /* SKGlobalMarco.h */,
 				EC6A80E41E53206F000FB081 /* Assets.xcassets */,
 				EC6A80E91E53206F000FB081 /* Info.plist */,
 				EC6A80EF1E53283C000FB081 /* Classes */,
@@ -148,6 +175,8 @@
 		EC6A80F61E53283C000FB081 /* LayoutConfig */ = {
 			isa = PBXGroup;
 			children = (
+				EC6A812D1E5434EE000FB081 /* SKCellLayoutConfig.h */,
+				EC6A812E1E5434EE000FB081 /* SKCellLayoutConfig.m */,
 			);
 			path = LayoutConfig;
 			sourceTree = "<group>";
@@ -295,6 +324,7 @@
 		EC6A81081E53283C000FB081 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC6A81291E543425000FB081 /* Object */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +381,8 @@
 		EC6A810F1E53283C000FB081 /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				EC6A81301E5435D1000FB081 /* SKLogManager.h */,
+				EC6A81311E5435D1000FB081 /* SKLogManager.m */,
 			);
 			path = Log;
 			sourceTree = "<group>";
@@ -393,8 +425,25 @@
 		EC6A81151E53283C000FB081 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				EC6A81201E542852000FB081 /* SKConfigDelegate.h */,
+				EC6A81211E542852000FB081 /* SKConfigDelegate.m */,
+				EC6A81231E542A01000FB081 /* SKBundleSettings.h */,
+				EC6A81241E542A01000FB081 /* SKBundleSettings.m */,
+				EC6A81261E5431FC000FB081 /* SKConfig.h */,
+				EC6A81271E5431FC000FB081 /* SKConfig.m */,
+				EC6A81331E5438DD000FB081 /* SKNotificationCenter.h */,
+				EC6A81341E5438DD000FB081 /* SKNotificationCenter.m */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		EC6A81291E543425000FB081 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A812A1E54343B000FB081 /* SKCustomAttachmentDecoder.h */,
+				EC6A812B1E54343B000FB081 /* SKCustomAttachmentDecoder.m */,
+			);
+			path = Object;
 			sourceTree = "<group>";
 		};
 		EEFA9E6EBBADC29539D86281 /* Pods */ = {
@@ -527,8 +576,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6A812C1E54343B000FB081 /* SKCustomAttachmentDecoder.m in Sources */,
+				EC6A81281E5431FC000FB081 /* SKConfig.m in Sources */,
+				EC6A812F1E5434EE000FB081 /* SKCellLayoutConfig.m in Sources */,
 				EC6A811B1E53F1B6000FB081 /* SKAppDelegate.m in Sources */,
+				EC6A81321E5435D1000FB081 /* SKLogManager.m in Sources */,
 				EC6A80DA1E53206F000FB081 /* main.m in Sources */,
+				EC6A81251E542A01000FB081 /* SKBundleSettings.m in Sources */,
+				EC6A81221E542852000FB081 /* SKConfigDelegate.m in Sources */,
+				EC6A81351E5438DD000FB081 /* SKNotificationCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@
 #import <Foundation/Foundation.h>
 #import <NIMSDK.h>
 #import <NIMAVChat.h>
-
+#import "SKGlobalMarco.h"
 #import <NIMKit.h>
 
 #import <CocoaLumberjack/CocoaLumberjack.h>
