@@ -14,10 +14,11 @@
 #import "SKLogManager.h"
 #import "SKLogManager.h"
 #import "SKNotificationCenter.h"
+#import "SKLoginManager.h"
 #import <UserNotifications/UserNotifications.h> //iOS 10 里面变了，更改之前的UINotification为UNNotification
 
 NSString *SKNotifiCationLogOut = @"SKNotifiCationLogOut";
-@interface SKAppDelegate ()
+@interface SKAppDelegate ()<NIMLoginManagerDelegate>
 
 @property (nonatomic,strong) SKConfigDelegate *sdkConfigDelegate;
 
@@ -56,10 +57,24 @@ NSString *SKNotifiCationLogOut = @"SKNotifiCationLogOut";
     return YES;
 }
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+    [[[NIMSDK sharedSDK] loginManager] removeDelegate:self];
+}
+
 #pragma mark - misc apns
 - (void)registapns
 {
     [[UIApplication sharedApplication] registerForRemoteNotifications];
+}
+
+- (void)setupMainController
+{
+    LoginData *data = [[SKLoginManager sharedManager] currentLoginData];
+    NSString *account = [data account];
+    NSString *token = [data token];
+    
 }
 
 - (void)commonInitListListenEvents
@@ -72,7 +87,7 @@ NSString *SKNotifiCationLogOut = @"SKNotifiCationLogOut";
 #pragma mark logOut
 - (void)Logout:(NSNotification *)note
 {
-//    []
+    
 }
 
 - (void)doLogout
