@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		539831F98F98B9CC0DE06BC3 /* libPods-IM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180477EEF5743F7E2FCB1513 /* libPods-IM.a */; };
 		EC6A80DA1E53206F000FB081 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A80D91E53206F000FB081 /* main.m */; };
-		EC6A80DD1E53206F000FB081 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A80DC1E53206F000FB081 /* AppDelegate.m */; };
-		EC6A80E01E53206F000FB081 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A80DF1E53206F000FB081 /* ViewController.m */; };
-		EC6A80E31E53206F000FB081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6A80E11E53206F000FB081 /* Main.storyboard */; };
 		EC6A80E51E53206F000FB081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6A80E41E53206F000FB081 /* Assets.xcassets */; };
-		EC6A80E81E53206F000FB081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6A80E61E53206F000FB081 /* LaunchScreen.storyboard */; };
+		EC6A811B1E53F1B6000FB081 /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A811A1E53F1B6000FB081 /* SKAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +18,11 @@
 		3CB95CF1CC419075EB1A14F7 /* Pods-IM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IM.release.xcconfig"; path = "Pods/Target Support Files/Pods-IM/Pods-IM.release.xcconfig"; sourceTree = "<group>"; };
 		EC6A80D51E53206F000FB081 /* IM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6A80D91E53206F000FB081 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EC6A80DB1E53206F000FB081 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EC6A80DC1E53206F000FB081 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EC6A80DE1E53206F000FB081 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EC6A80DF1E53206F000FB081 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EC6A80E21E53206F000FB081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC6A80E41E53206F000FB081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EC6A80E71E53206F000FB081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC6A80E91E53206F000FB081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6A81191E53F1B6000FB081 /* SKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = "<group>"; };
+		EC6A811A1E53F1B6000FB081 /* SKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = "<group>"; };
+		EC6A811E1E53F39C000FB081 /* SKIM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKIM-Prefix.pch"; sourceTree = "<group>"; };
 		FAE6F2770F15F72DD003C7BC /* Pods-IM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IM/Pods-IM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,13 +67,10 @@
 		EC6A80D71E53206F000FB081 /* IM */ = {
 			isa = PBXGroup;
 			children = (
-				EC6A80DB1E53206F000FB081 /* AppDelegate.h */,
-				EC6A80DC1E53206F000FB081 /* AppDelegate.m */,
-				EC6A80DE1E53206F000FB081 /* ViewController.h */,
-				EC6A80DF1E53206F000FB081 /* ViewController.m */,
-				EC6A80E11E53206F000FB081 /* Main.storyboard */,
+				EC6A81191E53F1B6000FB081 /* SKAppDelegate.h */,
+				EC6A811A1E53F1B6000FB081 /* SKAppDelegate.m */,
+				EC6A811E1E53F39C000FB081 /* SKIM-Prefix.pch */,
 				EC6A80E41E53206F000FB081 /* Assets.xcassets */,
-				EC6A80E61E53206F000FB081 /* LaunchScreen.storyboard */,
 				EC6A80E91E53206F000FB081 /* Info.plist */,
 				EC6A80EF1E53283C000FB081 /* Classes */,
 				EC6A80D81E53206F000FB081 /* Supporting Files */,
@@ -477,9 +468,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC6A80E81E53206F000FB081 /* LaunchScreen.storyboard in Resources */,
 				EC6A80E51E53206F000FB081 /* Assets.xcassets in Resources */,
-				EC6A80E31E53206F000FB081 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,32 +527,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC6A80E01E53206F000FB081 /* ViewController.m in Sources */,
-				EC6A80DD1E53206F000FB081 /* AppDelegate.m in Sources */,
+				EC6A811B1E53F1B6000FB081 /* SKAppDelegate.m in Sources */,
 				EC6A80DA1E53206F000FB081 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		EC6A80E11E53206F000FB081 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC6A80E21E53206F000FB081 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EC6A80E61E53206F000FB081 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC6A80E71E53206F000FB081 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EC6A80EA1E53206F000FB081 /* Debug */ = {
@@ -662,6 +631,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MQ7ZB3WWNR;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IM/SKIM-Prefix.pch";
 				INFOPLIST_FILE = IM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zhancheng.Co.Ltd.IM;
@@ -675,6 +645,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MQ7ZB3WWNR;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IM/SKIM-Prefix.pch";
 				INFOPLIST_FILE = IM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zhancheng.Co.Ltd.IM;
