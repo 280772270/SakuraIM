@@ -16,6 +16,16 @@
 
 #define UICommonTableBkgColor UIColorFromRGB(0xe47ec)
 
+
+#define SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+
 #pragma mark - UIColor 宏
 #define UIColorFromRGBA(rgbValue, alphaValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \

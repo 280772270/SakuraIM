@@ -21,6 +21,10 @@
 		EC6A81371E543E8A000FB081 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6A81361E543E8A000FB081 /* UserNotifications.framework */; };
 		EC6A813D1E5446ED000FB081 /* SKLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A813C1E5446ED000FB081 /* SKLoginManager.m */; };
 		EC6A81401E544CAB000FB081 /* SKFileLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A813F1E544CAB000FB081 /* SKFileLocationHelper.m */; };
+		EC6A81431E554702000FB081 /* SKService.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A81421E554702000FB081 /* SKService.m */; };
+		EC6A81461E555120000FB081 /* SKMainTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A81451E555120000FB081 /* SKMainTabController.m */; };
+		EC6A81491E5552D5000FB081 /* SKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A81481E5552D5000FB081 /* SKLoginViewController.m */; };
+		EC6A814B1E557A28000FB081 /* SKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC6A814A1E557A28000FB081 /* SKLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,13 @@
 		EC6A813C1E5446ED000FB081 /* SKLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKLoginManager.m; sourceTree = "<group>"; };
 		EC6A813E1E544CAB000FB081 /* SKFileLocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFileLocationHelper.h; sourceTree = "<group>"; };
 		EC6A813F1E544CAB000FB081 /* SKFileLocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFileLocationHelper.m; sourceTree = "<group>"; };
+		EC6A81411E554702000FB081 /* SKService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKService.h; sourceTree = "<group>"; };
+		EC6A81421E554702000FB081 /* SKService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKService.m; sourceTree = "<group>"; };
+		EC6A81441E555120000FB081 /* SKMainTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMainTabController.h; sourceTree = "<group>"; };
+		EC6A81451E555120000FB081 /* SKMainTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMainTabController.m; sourceTree = "<group>"; };
+		EC6A81471E5552D5000FB081 /* SKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKLoginViewController.h; sourceTree = "<group>"; };
+		EC6A81481E5552D5000FB081 /* SKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKLoginViewController.m; sourceTree = "<group>"; };
+		EC6A814A1E557A28000FB081 /* SKLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKLoginViewController.xib; sourceTree = "<group>"; };
 		FAE6F2770F15F72DD003C7BC /* Pods-IM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IM/Pods-IM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +171,8 @@
 		EC6A80F31E53283C000FB081 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EC6A81441E555120000FB081 /* SKMainTabController.h */,
+				EC6A81451E555120000FB081 /* SKMainTabController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -307,6 +320,9 @@
 		EC6A81051E53283C000FB081 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				EC6A81471E5552D5000FB081 /* SKLoginViewController.h */,
+				EC6A81481E5552D5000FB081 /* SKLoginViewController.m */,
+				EC6A814A1E557A28000FB081 /* SKLoginViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -443,6 +459,8 @@
 				EC6A81341E5438DD000FB081 /* SKNotificationCenter.m */,
 				EC6A813E1E544CAB000FB081 /* SKFileLocationHelper.h */,
 				EC6A813F1E544CAB000FB081 /* SKFileLocationHelper.m */,
+				EC6A81411E554702000FB081 /* SKService.h */,
+				EC6A81421E554702000FB081 /* SKService.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -499,7 +517,7 @@
 				TargetAttributes = {
 					EC6A80D41E53206F000FB081 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = MQ7ZB3WWNR;
+						DevelopmentTeam = EB7X7DQK4T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -527,6 +545,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6A814B1E557A28000FB081 /* SKLoginViewController.xib in Resources */,
 				EC6A80E51E53206F000FB081 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,9 +607,12 @@
 			files = (
 				EC6A812C1E54343B000FB081 /* SKCustomAttachmentDecoder.m in Sources */,
 				EC6A81281E5431FC000FB081 /* SKConfig.m in Sources */,
+				EC6A81461E555120000FB081 /* SKMainTabController.m in Sources */,
 				EC6A812F1E5434EE000FB081 /* SKCellLayoutConfig.m in Sources */,
+				EC6A81491E5552D5000FB081 /* SKLoginViewController.m in Sources */,
 				EC6A811B1E53F1B6000FB081 /* SKAppDelegate.m in Sources */,
 				EC6A81321E5435D1000FB081 /* SKLogManager.m in Sources */,
+				EC6A81431E554702000FB081 /* SKService.m in Sources */,
 				EC6A80DA1E53206F000FB081 /* main.m in Sources */,
 				EC6A81251E542A01000FB081 /* SKBundleSettings.m in Sources */,
 				EC6A81221E542852000FB081 /* SKConfigDelegate.m in Sources */,
@@ -698,11 +720,11 @@
 			baseConfigurationReference = FAE6F2770F15F72DD003C7BC /* Pods-IM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MQ7ZB3WWNR;
+				DEVELOPMENT_TEAM = EB7X7DQK4T;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IM/SKIM-Prefix.pch";
 				INFOPLIST_FILE = IM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zhancheng.Co.Ltd.IM;
+				PRODUCT_BUNDLE_IDENTIFIER = sakura.nim.imdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -712,11 +734,11 @@
 			baseConfigurationReference = 3CB95CF1CC419075EB1A14F7 /* Pods-IM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MQ7ZB3WWNR;
+				DEVELOPMENT_TEAM = EB7X7DQK4T;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IM/SKIM-Prefix.pch";
 				INFOPLIST_FILE = IM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zhancheng.Co.Ltd.IM;
+				PRODUCT_BUNDLE_IDENTIFIER = sakura.nim.imdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

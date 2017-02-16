@@ -15,6 +15,9 @@
 #import "SKLogManager.h"
 #import "SKNotificationCenter.h"
 #import "SKLoginManager.h"
+#import "SKService.h"
+#import "SKMainTabController.h"
+#import "SKLoginViewController.h"
 #import <UserNotifications/UserNotifications.h> //iOS 10 里面变了，更改之前的UINotification为UNNotification
 
 NSString *SKNotifiCationLogOut = @"SKNotifiCationLogOut";
@@ -52,7 +55,7 @@ NSString *SKNotifiCationLogOut = @"SKNotifiCationLogOut";
     self.window.backgroundColor = [UIColor grayColor];
     [self.window makeKeyAndVisible];
 //    [application setStatusBarStyle:UIStatusBarStyleLightContent];
-    
+    [self setupMainController];
     
     return YES;
 }
@@ -61,6 +64,45 @@ NSString *SKNotifiCationLogOut = @"SKNotifiCationLogOut";
 {
     [[NSNotificationCenter defaultCenter]removeObserver:self];
     [[[NIMSDK sharedSDK] loginManager] removeDelegate:self];
+}
+
+#pragma mark - ApplicationDelefate
+
+- (void)applicationWillResignActive:(UIApplication *)application{
+    
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application{
+    NSInteger count = [[[NIMSDK sharedSDK] conversationManager ]allUnreadCount];
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:count];
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application{
+    
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application{
+    
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application{
+    
+}
+
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(nonnull NSData *)deviceToken
+{
+    [[NIMSDK sharedSDK] updateApnsToken:deviceToken];
+    DDLogInfo(@"didRegisterForRemoteNotificationsWithDeviceToken : %@" ,deviceToken);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    DDLogInfo(@"receive remote notification : %@" , userInfo);
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    DDLogInfo(@"fail get apns token Error : %@" , error);
 }
 
 #pragma mark - misc apns
@@ -75,24 +117,45 @@ NSString *SKNotifiCationLogOut = @"SKNotifiCationLogOut";
     NSString *account = [data account];
     NSString *token = [data token];
     
+    if ([account length] && [token length])
+    {
+        [[[NIMSDK sharedSDK] loginManager] autoLogin:account
+                                               token:token];
+        [[SKServiceManager sharedManager] start];
+        SKMainTabController *mainTab = [[SKMainTabController alloc]initWithNibName:nil bundle:nil];
+        self.window.rootViewController = mainTab;
+    }else{
+        [self setUpLoginViewController];
+    }
 }
 
 - (void)commonInitListListenEvents
 {
     [[NSNotificationCenter defaultCenter]addObserver:self
                                             selector:@selector(Logout:)
-                                                name:SKNotifiCationLogOut object:nil];
+                                                name:SKNotifiCationLogOut object:nil];\
+    
+    [[[NIMSDK sharedSDK] loginManager ] addDelegate:self];
+}
+
+- (void)setUpLoginViewController
+{
+    SKLoginViewController *loginController = [[SKLoginViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:loginController];
+    self.window.rootViewController = nav;
 }
 
 #pragma mark logOut
 - (void)Logout:(NSNotification *)note
 {
-    
+    [self doLogout];
 }
 
 - (void)doLogout
 {
-    
+    [[SKLoginManager sharedManager] setCurrentLoginData:nil];
+    [[SKServiceManager sharedManager]destory];
+    [self setupMainController];
 }
 
 #pragma mark - logic impl
