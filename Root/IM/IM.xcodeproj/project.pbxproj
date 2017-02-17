@@ -25,6 +25,9 @@
 		EC6A81461E555120000FB081 /* SKMainTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A81451E555120000FB081 /* SKMainTabController.m */; };
 		EC6A81491E5552D5000FB081 /* SKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A81481E5552D5000FB081 /* SKLoginViewController.m */; };
 		EC6A814B1E557A28000FB081 /* SKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC6A814A1E557A28000FB081 /* SKLoginViewController.xib */; };
+		EC6A814D1E55C506000FB081 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6A814C1E55C506000FB081 /* AVFoundation.framework */; };
+		EC6A81581E56ECE2000FB081 /* UIView+SK.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A81571E56ECE2000FB081 /* UIView+SK.m */; };
+		EC6A815A1E56F636000FB081 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6A81591E56F636000FB081 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,13 @@
 		EC6A81471E5552D5000FB081 /* SKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKLoginViewController.h; sourceTree = "<group>"; };
 		EC6A81481E5552D5000FB081 /* SKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKLoginViewController.m; sourceTree = "<group>"; };
 		EC6A814A1E557A28000FB081 /* SKLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKLoginViewController.xib; sourceTree = "<group>"; };
+		EC6A814C1E55C506000FB081 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EC6A814E1E55C521000FB081 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EC6A81501E55C528000FB081 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		EC6A81521E55C52E000FB081 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		EC6A81561E56ECE2000FB081 /* UIView+SK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SK.h"; sourceTree = "<group>"; };
+		EC6A81571E56ECE2000FB081 /* UIView+SK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SK.m"; sourceTree = "<group>"; };
+		EC6A81591E56F636000FB081 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FAE6F2770F15F72DD003C7BC /* Pods-IM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IM/Pods-IM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6A815A1E56F636000FB081 /* QuartzCore.framework in Frameworks */,
+				EC6A814D1E55C506000FB081 /* AVFoundation.framework in Frameworks */,
 				EC6A81371E543E8A000FB081 /* UserNotifications.framework in Frameworks */,
 				539831F98F98B9CC0DE06BC3 /* libPods-IM.a in Frameworks */,
 			);
@@ -83,6 +95,11 @@
 		AF75A90C662EBC00DD5AA0F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC6A81591E56F636000FB081 /* QuartzCore.framework */,
+				EC6A81521E55C52E000FB081 /* CoreAudioKit.framework */,
+				EC6A81501E55C528000FB081 /* CoreAudio.framework */,
+				EC6A814E1E55C521000FB081 /* AudioToolbox.framework */,
+				EC6A814C1E55C506000FB081 /* AVFoundation.framework */,
 				EC6A81361E543E8A000FB081 /* UserNotifications.framework */,
 				180477EEF5743F7E2FCB1513 /* libPods-IM.a */,
 			);
@@ -146,6 +163,8 @@
 		EC6A80F01E53283C000FB081 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				EC6A81561E56ECE2000FB081 /* UIView+SK.h */,
+				EC6A81571E56ECE2000FB081 /* UIView+SK.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -618,6 +637,7 @@
 				EC6A81221E542852000FB081 /* SKConfigDelegate.m in Sources */,
 				EC6A81351E5438DD000FB081 /* SKNotificationCenter.m in Sources */,
 				EC6A81401E544CAB000FB081 /* SKFileLocationHelper.m in Sources */,
+				EC6A81581E56ECE2000FB081 /* UIView+SK.m in Sources */,
 				EC6A813D1E5446ED000FB081 /* SKLoginManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

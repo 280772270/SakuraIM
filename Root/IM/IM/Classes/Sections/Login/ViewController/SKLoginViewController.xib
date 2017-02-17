@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SKLoginViewController">
             <connections>
                 <outlet property="logoImageView" destination="Big-dn-1h3" id="d2V-FQ-reY"/>
+                <outlet property="registButton" destination="TJu-gA-Ajo" id="EmA-HG-NiN"/>
                 <outlet property="userNameTextField" destination="PG1-nX-h9E" id="1aO-Ab-5jI"/>
                 <outlet property="userPasswordTextField" destination="oi5-RC-t21" id="rya-45-3sj"/>
                 <outlet property="view" destination="iN0-l3-epB" id="mjH-sV-3Zj"/>
@@ -76,6 +77,9 @@
                     <state key="normal" title="注册">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="registClick:" destination="-1" eventType="touchUpInside" id="cgs-Lq-KdX"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
